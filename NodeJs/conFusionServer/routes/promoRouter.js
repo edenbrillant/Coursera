@@ -73,7 +73,7 @@ promoRouter.route('/:promoId')
     .then((resp) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
-        res.json(promotion);
+        res.json(resp);
     }, (err) => next(err))
     .catch((err) => next(err));
 });
